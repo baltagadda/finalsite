@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2? family = Lato: wght @ 100 & display = swap');
+/* font-family: 'Roboto', sans-serif; */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+} 
+a{ 
+	text-decoration: none;
+}
+
+
+body {
+	font-family: 'Lato';
+	background-color: #FFFABB;
+	color: black;	
+	font-size: 1.2rem;
+	text-align: center;
+	min-height: 100%;
+	align-items: center;
+
+}
+
+.contenedor{
+  display: grid;
+  gap: 10px 0px;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "section"
+  "line2"
+  "formulario"
+  "footer" ;
+
+}
+/*desktop*/
+@media screen and (min-width:1101px){
+  .contenedor{
+  grid-template:
+    "header		header		header"		auto		
+    ".			nav			."			auto
+    "section	section 	section"	auto
+    ". 			line2 		."			auto
+    "formulario	formulario	formulario"	auto
+    "footer		footer		footer"		auto /
+    auto		70%			auto
+}
+
+.header { 
+	grid-area: header; 
+	background-color: white;
+	padding: 2%;
+
+}
+.header img {
+	width: 15%;	
+}
+.logodesktop {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.logomobile {
+	display: none;
+}
+
+.nav { 
+	grid-area: nav;
+	margin-top:  5%;
+
+}
+
+.nav img{
+	width: 70%;
+	transition: all 0.3 ease;
+	
+}
+.suscribitedesktop {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.nav img:hover {
+    transform: scale(1.5,1.5);
+}
+
+.suscribitemobile {
+	display: none;
+}
+
+
+.section { 
+	grid-area: section; 
+	margin-top:  3%;
+
+	
+}
+
+.section img {
+	width: 100%;
+	height: auto;
+}
+
+.sectiondesktop {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sectionmobile {
+	display: none;
+}
+.sectiontablet {
+	display: none;
+}
+
+.line2 {
+   grid-area: line2;  
+   margin-top: 120px;
+  
+}
+
+.line2 img {
+	width: 50%;
+}
+
+.linemobile {
+		display: none;
+	}
+
+
+
+.formulario { 
+	grid-area: formulario; 
+	background-image: url(../img/mushu3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	color: black;
+    font-family: 'Lato';
+    font-weight: lighter;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.formulario p {
+	margin-top: 40px;
+	padding:2%;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.formulario p:hover {
+	background-color: black;
+	color: white;
+	border-radius: 30px;
+}
+
+.boxform {
+       padding: 20px;
+       width: 30%;
+       font-size: 20px;
+       background-color: #DBDBDB;
+       margin: 10px;
+       border: 5px #DBDBDB;
+       border-radius: 48px;
+       border-radius: 48px;
+       border-radius: 48px;        
+}
+
+
+.submitform {
+       padding: 1%;
+       width: 20%;
+       font-size: 35px;
+       background-color: #FFFABB;
+       border: 5px #DBDBDB;
+       border-radius: 48px;
+       border-radius: 48px;
+       border-radius: 48px;  
+       margin-bottom: 15px;
+       transition: all 0.3s ease;
+      
+   }
+   .submitform:hover {
+   	box-shadow: inset 0 0 0 25px #000;
+  	background-color: #000;
+	color: white ;
+  }
+
+.footer { 
+	grid-area: footer;
+    text-align: center;
+
+
+}
+
+.nombre {
+	
+	background-color: black;
+	color: #FFFABB;
+	font-size: 25px;
+	padding: 1%;
+
+
+}
+.fa {
+	
+	background-color: black;
+	color: #FFFABB;
+	font-size: 25px;
+	padding: 1%;
+
+}
+.boxform:hover {
+	color: black;
+	background-color: #FFFABB;
+	border-radius: solid black 5px ;
+
+	
+}
+
+
+footer a:hover {
+	
+	background-color: white;
+	color: black;
+
+	
+}
+
+
+}
+/*pantalla tablet*/
+@media screen and (min-width:801px) and (max-width:1100px){
+	.contenedor{
+	
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  0.3fr 0.4fr 2.5fr 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "line2"
+    "formulario"
+    "footer";
+}
+
+.header { 
+	grid-area: header;
+	margin-bottom: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-color: white;
+	 }
+.header img {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logodesktop {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logomobile {
+	display: none;
+}
+
+.nav { 
+	grid-area: nav;
+	padding: 30px;
+	 }
+
+.nav img {
+	width: 75%;
+}
+
+.suscribitedesktop {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.suscribitemobile {
+	display: none;
+}
+
+.section { 
+	grid-area: section;
+	padding-top: 5%;
+
+}
+.section img {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+
+	
+}
+.sectiontablet {
+	display: block;
+	height: 100%;
+}
+.sectiondesktop {
+	display: none;
+}
+.sectionmobile {
+	display: none;
+}
+
+.formulario { 
+	grid-area: formulario;
+	background-color: white;
+	padding-top: 4%;
+	padding-bottom: 7%;
+    font-size: 30px;
+	 }
+	 .formulario p {
+	 	padding:2%;
+	 }
+.formulario p:hover {
+	background-color: black;
+	color: white;
+}
+
+.boxform {
+       padding: 20px;
+       width: 90%;
+       font-size: 20px;
+       background-color: #DBDBDB;
+       margin: 10px;
+       border: 5px #DBDBDB;
+       border-radius: 48px;
+       border-radius: 48px;
+       border-radius: 48px;        
+}
+
+
+.submitform {
+       padding: 10px;
+       width: 30%;
+       font-size: 35px;
+       background-color: #FFFABB;
+       border: solid 2px black;
+       border-radius: 48px;
+       border-radius: 48px;
+       border-radius: 48px;  
+       margin-bottom: 15px;
+      
+   }
+.footer { 
+	grid-area: footer;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	 }
+
+
+.nombre {
+	
+	background-color: black;
+	color: #FFFABB;
+	font-size: 25px;
+	padding: 2%;
+
+
+}
+.fa {
+	
+	background-color: black;
+	color: #FFFABB;
+	font-size: 25px;
+	padding: 2%;
+
+}
+.line2{
+	grid-area: line2;
+	
+	
+
+}
+.line2 img {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+
+}
+.linemobile {
+	display: none;
+}
+.linedesktop {
+	display: block;
+
+}
+.boxform:hover {
+	color: black;
+	background-color: #FFFABB;
+	border-radius: solid black 5px ;
+
+	
+}
+.submitform:hover {
+  	background-color: black;
+	color: white;
+  }
+footer a:hover {
+	
+	background-color: white;
+	color: black;
+
+	
+}
+}
+/*mobile*/
+@media (max-width:800px){
+	.contenedor{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "formulario"
+    "footer";
+}
+
+.header { 
+	grid-area: header;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	background-color: white;
+	 }
+.header img {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logodesktop {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logomobile {
+	display: none;
+}
+
+.nav { 
+	grid-area: nav;
+	
+	 }
+
+.nav img {
+	width: 75%;
+	margin-top: 4%;
+}
+
+.suscribitedesktop {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.suscribitemobile {
+	display: none;
+}
+
+.section { 
+	grid-area: section;
+	margin-top:  10%;
+
+}
+.section img {
+	width: 97%;
+	margin-right: auto;
+	margin-left: auto;
+
+	
+}
+.sectiontablet {
+	display: block;
+	height: 100%;
+}
+.sectiondesktop {
+	display: none;
+}
+.sectionmobile {
+	display: none;
+}
+
+.formulario { 
+	grid-area: formulario;
+	background-color: white;
+	padding-top: 10%;
+	padding-bottom: 15%;
+    font-size: 30px;
+    margin-top: 5%;
+    
+}
+ .formulario p {
+	 	padding:2%;
+	 }
+.formulario p:hover {
+	background-color: black;
+	color: white;
+}
+
+.boxform {
+       padding: 20px;
+       width: 90%;
+       font-size: 20px;
+       background-color: #DBDBDB;
+       margin: 10px;
+       border: 5px #DBDBDB;
+       border-radius: 48px;
+       border-radius: 48px;
+       border-radius: 48px;        
+}
+.boxform:hover {
+	color: black;
+	background-color: #FFFABB;
+	border-radius: solid black 5px ;
+
+	
+}
+
+
+.submitform {
+       padding: 10px;
+       width: 30%;
+       font-size: 35px;
+       background-color: #FFFABB;
+       border: solid 2px black;
+       border-radius: 48px;
+       border-radius: 48px;
+       border-radius: 48px;  
+       margin-bottom: 15px;
+      
+   }
+  .submitform:hover {
+  	background-color: black;
+	color: white;
+  }
+.footer { 
+	grid-area: footer;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-top: 5%;
+	 }
+
+
+.nombre {
+	
+	background-color: black;
+	color: #FFFABB;
+	font-size: 25px;
+	padding: 2%;
+
+
+}
+.fa {
+	
+	background-color: black;
+	color: #FFFABB;
+	font-size: 25px;
+	padding: 2%;
+
+}
+footer a:hover {
+	
+	background-color: white;
+	color: black;
+
+	
+}
+.line2{
+	display: none;
+}
+
+}
+
+
+
+
+
+
+
+
